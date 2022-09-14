@@ -1,0 +1,122 @@
+body{
+    margin:auto;
+    background: #E5E5E5;
+    font-family:sans-serif;
+    color: rgb(13, 12, 12); 
+  }
+  
+  
+  .container {
+    margin: 50px;
+  }
+  
+  table.listing {
+      border-spacing: 0px;
+      width: 80%;
+      border: 1px solid grey;
+  }
+  
+  table.listing th, table.listing td {
+      border: 1px solid grey;
+      height: 30px;
+      padding: 5px;
+  }
+  
+  input, select {
+    padding: 6px;
+    display:block;
+    margin: 5px;
+  }
+  
+  .navigation {
+  position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background: #14213D;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+   
+  .navigation a:hover {
+    background:  #FCA311;
+    font-size: larger;
+  }
+
+.forum
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  .forum-container
+  {
+    box-shadow: 2px 5px inset #14213D;
+    background-color: #FCA311;
+    border:5px groove #14213D;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: fit-content;
+    width: 300px;
+    min-height: fit-content;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .forum-container > *+*
+  {
+    padding:30px 20px;
+  }
+
+  .forum-container .modification
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ .navigation .user
+ {
+  color: #FCA311;
+  justify-content: center;
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+ }
+
+ .forum-container.insert
+ {
+    text-align: start;
+    font-size: large;
+   box-shadow: 2px 5px inset #14213D;
+   background-color: #FCA311;
+   border:5px groove #14213D;
+   width: 35vw;
+    height: 50vh;
+   
+   border-radius: 5px;
+   position: relative;
+   overflow: hidden;
+ }
+ .forum-container.insert > *
+ {
+  padding:30px 20px;
+ }
+ .forum-container.insert input:not(.dateParution,.submit)
+ {
+  width: 90%;
+  height: 50px;
+  align-items: center;
+  left:50;
+ }
